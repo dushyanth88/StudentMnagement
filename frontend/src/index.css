@@ -1,0 +1,68 @@
+/* Global CSS Variables for Premium Look */
+:root {
+  --primary-color: #4f46e5;
+  --primary-hover: #4338ca;
+  --danger-color: #ef4444;
+  --danger-hover: #dc2626;
+  --bg-color: #f3f4f6;
+  --card-bg: #ffffff;
+  --text-main: #111827;
+  --text-muted: #6b7280;
+  --border-color: #e5e7eb;
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --radius: 8px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-main);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex: 1;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* Home Page */
+.home-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.home-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.home-header h1 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+}
+
+.home-header p {
+  color: var(--text-muted);
+  font-size: 1.125rem;
+}
